@@ -26,7 +26,7 @@ final class BoardGameResource implements ResourceInterface
 
 ---
 
-```php {all|4|4,2|6|8|10|10,15-26|12}
+```php {all|4|4,2|6|8|10|10,15-26|17-18|19-26}
 // [...]
 use Sylius\Component\Resource\State\ProcessorInterface;
 

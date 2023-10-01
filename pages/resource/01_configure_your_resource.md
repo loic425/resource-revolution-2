@@ -17,3 +17,36 @@ class Book implements ResourceInterface
 }
 
 ```
+
+---
+
+### Debug command    
+
+```bash
+bin/console sylius:debug:resource 'app.book'
+```
+
+### Output
+
+```bash
+New Resource Metadata
+---------------------
+
+------------------------ ----------------------- 
+  Option                   Value                  
+ ------------------------ ----------------------- 
+  alias                    "app.book"             
+  section                  "admin"                
+  formType                 "App\Form\BookType"    
+  templatesDir             "@SyliusAdminUi/crud"  
+  routePrefix              "/admin"               
+  name                     "book"                 
+  pluralName               null                   
+  applicationName          "app"                  
+  identifier               null                   
+  normalizationContext     null                   
+  denormalizationContext   null                   
+  validationContext        null                   
+  class                    "App\Entity\Book"      
+ ------------------------ -----------------------
+```

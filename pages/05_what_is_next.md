@@ -67,7 +67,7 @@ return static function (ResourceConfigurator $resourceConfigurator): void {
 
 ---
 
-```php {all|9|9,7|11|11,6|12|13-18|20|21-23}
+```php {all|9|9,7|11|11,6|12|13-18}
 // config/api_platform/resources.php
 namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 
@@ -85,11 +85,6 @@ return static function (ApiResourceConfigurator $resourceConfigurator): void {
                 new Post(),
                 new Put(),
                 new Delete(),    
-            ])
-        )
-        ->withResource((new ApiResource(Subscription::class))
-            ->withOperations([
-                new GetCollection(),
             ])
         )
     ;

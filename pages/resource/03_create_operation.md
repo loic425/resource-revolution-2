@@ -1,21 +1,27 @@
-## Adding books
+## Adding/Editing books
 
 <v-clicks>
 
-We'll use `Create` operation which allows to add a new item of your resource.
+We'll use `Create` and `Update` operations which allows to add a new item of your resource.
 
-```php {all|9|9,3|10|10,5}
+```php {all|11|11,3|14-15|14-15,4,6}
 namespace App\Entity;
 
 use App\Form\BookType;
-use Sylius\Component\Resource\Metadata\Index;
 use Sylius\Component\Resource\Metadata\Create;
+use Sylius\Component\Resource\Metadata\Index;
+use Sylius\Component\Resource\Metadata\Update;
 use Sylius\Component\Resource\Metadata\Resource;
 use Sylius\Component\Resource\Model\ResourceInterface;
 
-#[Resource(formType: BookType::class)]
-#[Create]
-#[Index]
+#[Resource(
+    formType: BookType::class,
+    operations: [
+        new Index(grid: BookGrid::class),
+        new Create(),
+        new Update(),
+    ],
+)]
 class Book implements ResourceInterface
 {
 }
@@ -30,18 +36,19 @@ class Book implements ResourceInterface
 
 <v-clicks>
 
-It will configure this route for your `create` operation.
+It will configure this route for your `create` and your `update` operations.
 
-| Name            | Method    | Path       |
-|-----------------|-----------|------------|
-| app_book_create | GET, POST | /books/new |
+| Name            | Method                | Path             |
+|-----------------|-----------------------|------------------|
+| app_book_create | GET, POST             | /books/new       |
+| app_book_update | GET, PUT, PATCH, POST | /books/{id}/edit |
 
 
 </v-clicks>
 
 ---
 
-```php {all|19-23|19|20|21}
+```php {all|15-19|16|17|20-24|21|22}
 final class BookGrid extends AbstractGrid implements ResourceAwareGridInterface
 {
     // [...]
@@ -51,18 +58,19 @@ final class BookGrid extends AbstractGrid implements ResourceAwareGridInterface
         $gridBuilder
             ->orderBy('name', 'asc')
             ->addField(
-                StringField::create('name')
-                    ->setLabel('sylius.ui.name')
-                    ->setSortable(true)
+                // [...]
             )
             ->addField(
-                StringField::create('author')
-                    ->setLabel('sylius.ui.author')
-                    ->setSortable(true)
+                // [...]
             )
             ->addActionGroup(
                 MainActionGroup::create(
                     CreateAction::create(),
+                )
+            )
+            ->addActionGroup(
+                ItemActionGroup::create(
+                    UpdateAction::create(),
                 )
             )
         ;
@@ -78,7 +86,7 @@ final class BookGrid extends AbstractGrid implements ResourceAwareGridInterface
 
 ---
 layout: image
-image: /adding_book_01.png
+image: /editing_book_01.png
 transition: fade
 ---
 
@@ -103,5 +111,17 @@ transition: fade
 ---
 layout: image
 image: /adding_book_05.png
+transition: fade
+---
+
+---
+layout: image
+image: /editing_book_03.png
+transition: fade
+---
+
+---
+layout: image
+image: /editing_book_04.png
 transition: fade
 ---

@@ -26,7 +26,7 @@ colorSchema: light
 css: unocss
 ---
 
-# The impact of API Platform on Open-Source
+# Resource Revolution
 
 on the new Sylius Resource & Grid bundles
 

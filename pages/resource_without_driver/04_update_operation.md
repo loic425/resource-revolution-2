@@ -60,7 +60,7 @@ final class BoardGameItemProvider implements ProviderInterface
 
 ---
 
-```php {all|4|4,2|6|8|10|10,15-26|12}
+```php {all|4|4,2|6|8|10|10,15-26|17-18|20-21|23-27}
 // [...]
 use Sylius\Component\Resource\State\ProcessorInterface;
 
