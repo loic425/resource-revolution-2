@@ -4,15 +4,18 @@
 
 We'll use `Index` operation which allows to browse all items of your resource.
 
-```php {all|8|8,3}
+```php {all|9|9,3}
 namespace App\Entity;
 
 use Sylius\Component\Resource\Metadata\Index;
 use Sylius\Component\Resource\Metadata\Resource;
 use Sylius\Component\Resource\Model\ResourceInterface;
 
-#[Resource]
-#[Index]
+#[Resource(
+    operations: [
+        new Index(),
+    ],
+)]
 class Book implements ResourceInterface
 {
 }
@@ -33,6 +36,41 @@ It will configure this route for your `index` operation.
 |-----------------------|-----------------|---------|
 | app_book_index        | GET             | /books  |
 
+</v-clicks>
+
+--- 
+
+## Tips
+
+<v-clicks>
+
+```bash
+bin/console sylius:debug:resource app_book_index
+```
+
+```bash
+Operation Metadata
+------------------
+
+ ------------------------ -------------------------------------------------------------------- 
+Option                   Value
+ ------------------------ -------------------------------------------------------------------- 
+twigContextFactory       "sylius.twig.context.factory.default"                               
+methods                  [                                                                   
+"GET"                                                             
+]                                                                   
+path                     null                                                                
+routeName                "app_book_index"                                              
+routePrefix              null                                                         
+redirectToRoute          null                                                                
+redirectArguments        null                                                                
+provider                 "Sylius\Component\Resource\Symfony\Request\State\Provider"          
+processor                "Sylius\Component\Resource\Doctrine\Common\State\PersistProcessor"  
+responder                "Sylius\Component\Resource\Symfony\Request\State\Responder"         
+repository               "app.repository.book"                                               
+template                 "@SyliusAdminUi/crud/index.html.twig"
+# [...]
+```
 
 </v-clicks>
 
@@ -102,6 +140,24 @@ class Book implements ResourceInterface
 ```
 
 </v-clicks>
+
+---
+
+```bash
+bin/console sylius:debug:resource app_book_index
+```
+
+```bash
+Operation Metadata
+------------------
+
+ ------------------------ -------------------------------------------------------------------- 
+Option                   Value
+ ------------------------ -------------------------------------------------------------------- 
+# [...]                                                            
+provider                 "Sylius\Component\Resource\Grid\State\RequestGridProvider"        
+# [...]
+```
 
 ---
 layout: image

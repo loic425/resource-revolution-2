@@ -5,7 +5,7 @@ image: /akawaka.png
 
 # Akawaka
 
-## Experts for your web projects
+## Experts for your web projects & Sylius partner
 
 We help you design and improve your projects:
 

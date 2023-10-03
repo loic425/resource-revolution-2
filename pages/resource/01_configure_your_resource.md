@@ -32,21 +32,22 @@ bin/console sylius:debug:resource 'app.book'
 New Resource Metadata
 ---------------------
 
------------------------- ----------------------- 
-  Option                   Value                  
- ------------------------ ----------------------- 
-  alias                    "app.book"             
-  section                  "admin"                
-  formType                 "App\Form\BookType"    
-  templatesDir             "@SyliusAdminUi/crud"  
-  routePrefix              "/admin"               
-  name                     "book"                 
-  pluralName               null                   
-  applicationName          "app"                  
-  identifier               null                   
-  normalizationContext     null                   
-  denormalizationContext   null                   
-  validationContext        null                   
-  class                    "App\Entity\Book"      
- ------------------------ -----------------------
+ ------------------------ ------------------- 
+  Option                   Value              
+ ------------------------ ------------------- 
+  alias                    "app.book"         
+  section                  null               
+  formType                 null               
+  templatesDir             null               
+  routePrefix              null               
+  name                     "book"             
+  pluralName               null               
+  applicationName          "app"              
+  identifier               null               
+  normalizationContext     null               
+  denormalizationContext   null               
+  validationContext        null               
+  class                    "App\Entity\Book"  
+ ------------------------ ------------------- 
+
 ```
