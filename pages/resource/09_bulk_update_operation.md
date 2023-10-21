@@ -19,10 +19,15 @@ use Sylius\Component\Resource\Metadata\BulkUpdate;
 class Book implements ResourceInterface
 {
 }
-
 ```
 
 </v-clicks>
+
+<!--
+
+Custom Bulk processor for batch processing with Symfony messenger
+
+-->
 
 ---
 

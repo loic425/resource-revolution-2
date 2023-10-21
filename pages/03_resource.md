@@ -8,20 +8,27 @@ class: 'text-center'
 
 ## Resource Bundle
 
+---
 
-<!--
+### Today use cases
 
-## Today use cases
+<v-clicks>
 
-* Cela a été conçu initialement pour faire du CRUD d'entités Doctrine.
-* Cela permet d'éviter d'écrire des controllers qui font tous la même chose.
+* Initially created for CRUD with Doctrine entities.
+* This avoids writing controllers that all do the same thing.
 
-## Tomorrow use cases
+</v-clicks>
 
-* Meilleur DX
-* Customiser la couche de persistance : ERP, Elastic search..
+---
 
--->
+### Tomorrow use cases
+
+<v-clicks>
+
+* Better DX
+* Customize persistence layer : ERP, Elastic search...
+
+</v-clicks>
 
 ---
 

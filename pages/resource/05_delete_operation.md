@@ -13,7 +13,7 @@ use Sylius\Component\Resource\Metadata\Create;
 use Sylius\Component\Resource\Metadata\Delete;
 // [...]
 
-#[Resource(
+#[AsResource(
     formType: BookType::class,
     operations: [
         new Index(grid: BookGrid::class),

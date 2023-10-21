@@ -42,7 +42,7 @@ namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 
 use App\Entity\Book;
 use App\Entity\Subscription;
-use Sylius\Component\Resource\Metadata\Resource;
+use Sylius\Component\Resource\Metadata\AsResource;
 use Sylius\Component\Loader\Configuration\ResourceConfigurator;
 
 return static function (ResourceConfigurator $resourceConfigurator): void {

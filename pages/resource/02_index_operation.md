@@ -4,18 +4,21 @@
 
 We'll use `Index` operation which allows to browse all items of your resource.
 
-```php {all|9|9,3}
+```php {all|8-10|8-10,3|12-14}
 namespace App\Entity;
 
 use Sylius\Component\Resource\Metadata\Index;
-use Sylius\Component\Resource\Metadata\Resource;
+use Sylius\Component\Resource\Metadata\AsResource;
 use Sylius\Component\Resource\Model\ResourceInterface;
 
-#[Resource(
+#[AsResource(
     operations: [
         new Index(),
     ],
 )]
+// OR
+#[AsResource]
+#[Index]
 class Book implements ResourceInterface
 {
 }
@@ -125,10 +128,10 @@ namespace App\Entity;
 
 use App\Grid\BookGrid;
 use Sylius\Component\Resource\Metadata\Index;
-use Sylius\Component\Resource\Metadata\Resource;
+use Sylius\Component\Resource\Metadata\AsResource;
 use Sylius\Component\Resource\Model\ResourceInterface;
 
-#[Resource]
+#[AsResource]
 // You can use either the FQCN of your grid
 #[Index(grid: BookGrid::class)]
 // Or you can use the grid name

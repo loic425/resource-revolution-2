@@ -6,11 +6,11 @@
 namespace App\BoardGameBlog\Infrastructure\Sylius\Resource;
 
 use Sylius\Component\Resource\Metadata\Index;
-use Sylius\Component\Resource\Metadata\Resource;
+use Sylius\Component\Resource\Metadata\AsResource;
 use Sylius\Component\Resource\Model\ResourceInterface;
 use Symfony\Component\Validator\Constraints\NotBlank;
 
-#[Resource(driver: false)]
+#[AsResource(driver: false)]
 #[Index(
     grid: 'app_board_game'
 )]
@@ -54,6 +54,11 @@ final class BoardGameGrid extends AbstractGrid implements ResourceAwareGridInter
 }
 
 ```
+
+<!--
+The Grid package has its own provider system.
+The default one use Doctrine ORM.
+-->
 
 ---
 transition: fade

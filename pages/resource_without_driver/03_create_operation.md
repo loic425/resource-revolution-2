@@ -11,7 +11,7 @@ use App\BoardGameBlog\Infrastructure\Symfony\Form\Type\BoardGameType;
 use Sylius\Component\Resource\Metadata\Index;
 use Sylius\Component\Resource\Metadata\Create;
 
-#[Resource(
+#[AsResource(
     driver: false, 
     formType: BoardGameType::class),
 ]

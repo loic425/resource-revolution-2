@@ -11,10 +11,10 @@ use App\Form\BookType;
 use Sylius\Component\Resource\Metadata\Create;
 use Sylius\Component\Resource\Metadata\Index;
 use Sylius\Component\Resource\Metadata\Update;
-use Sylius\Component\Resource\Metadata\Resource;
+use Sylius\Component\Resource\Metadata\AsResource;
 use Sylius\Component\Resource\Model\ResourceInterface;
 
-#[Resource(
+#[AsResource(
     formType: BookType::class,
     operations: [
         new Index(grid: BookGrid::class),
