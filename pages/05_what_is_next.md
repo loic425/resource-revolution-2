@@ -3,7 +3,7 @@
 <v-clicks>
 
 * Stable release
-* Remove Kernel events
+* Remove Kernel events (WIP thx to Vasilvestre)
 * PHP configuration
 
 </v-clicks>
@@ -42,12 +42,12 @@ namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 
 use App\Entity\Book;
 use App\Entity\Subscription;
-use Sylius\Component\Resource\Metadata\AsResource;
+use Sylius\Component\Resource\Metadata\ResourceMetadata;
 use Sylius\Component\Loader\Configuration\ResourceConfigurator;
 
 return static function (ResourceConfigurator $resourceConfigurator): void {
     $resourceConfigurator
-        ->withResource((new Resource(Book::class))
+        ->withResource((new ResourceMetadata(Book::class))
             ->withRoutePrefix('admin')
             ->withOperations([
                 new Index(),
@@ -56,7 +56,7 @@ return static function (ResourceConfigurator $resourceConfigurator): void {
                 new Delete(),    
             ])
         )
-        ->withResource((new Resource(Subscription::class))
+        ->withResource((new ResourceMetadata(Subscription::class))
             ->withOperations([
                 new Index(),
             ])
@@ -97,3 +97,17 @@ layout: image
 image: https://www.lelabocoworking.com/wp-content/uploads/2019/07/Coop%C3%A9ration.jpg
 transition: fade
 ---
+
+<!--
+Cooperation
+-->
+
+---
+layout: center
+---
+
+Now, it's your turn to give it a try.
+
+<!--
+The two routing systems  are working together without any conflicts.
+-->

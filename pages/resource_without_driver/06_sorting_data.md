@@ -109,6 +109,10 @@ final class BoardGameGridProvider implements DataProviderInterface
 
 ```
 
+<!--
+Reversed strings
+-->
+
 ---
 layout: image
 image: /sorting_board_games_03.png
