@@ -3,10 +3,28 @@
 <v-clicks>
 
 * Stable release
+* Reunite bundle & component into same package
 * Remove Kernel events (WIP thx to Vasilvestre)
 * PHP configuration
 
 </v-clicks>
+
+---
+
+### Reunite bundle & component into same package
+
+Before
+
+```php
+Sylius\Bundle\ResourceBundle
+Sylius\Component\Resource
+```
+
+After
+
+```php
+Sylius\Resource
+```
 
 ---
 
