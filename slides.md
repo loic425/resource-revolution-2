@@ -28,7 +28,7 @@ css: unocss
 
 # Resource Revolution
 
-on the new Sylius Resource & Grid bundles
+on the new Sylius Resource & Grid
 
 <div align="center">
 <img class="w-75" align="center" src="https://sylius.com/wp-content/uploads/2021/03/sylius-logo_sylius-logo-light-1024x422.jpg">

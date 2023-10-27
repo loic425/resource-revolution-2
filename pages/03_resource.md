@@ -10,23 +10,24 @@ class: 'text-center'
 
 ---
 
-### Today use cases
+###  Past use cases
 
 <v-clicks>
 
-* Initially created for CRUD with Doctrine entities.
-* This avoids writing controllers that all do the same thing.
+* Making CRUD with Doctrine entities.
+* Avoiding writing controllers that all do the same thing.
 
 </v-clicks>
 
 ---
 
-### Tomorrow use cases
+### Today use cases
 
 <v-clicks>
 
 * Better DX
 * Customize persistence layer : ERP, Elastic search...
+* Allow to use in DDD projects
 
 </v-clicks>
 

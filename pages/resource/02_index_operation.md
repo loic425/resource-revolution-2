@@ -72,7 +72,7 @@ processor                "Sylius\Component\Resource\Doctrine\Common\State\Persis
 responder                "Sylius\Component\Resource\Symfony\Request\State\Responder"         
 repository               "app.repository.book"                                               
 template                 "@SyliusAdminUi/crud/index.html.twig"
-# [...]
+#[...]
 ```
 
 </v-clicks>
@@ -157,9 +157,9 @@ Operation Metadata
  ------------------------ -------------------------------------------------------------------- 
 Option                   Value
  ------------------------ -------------------------------------------------------------------- 
-# [...]                                                            
+#[...]                                                            
 provider                 "Sylius\Component\Resource\Grid\State\RequestGridProvider"        
-# [...]
+#[...]
 ```
 
 ---
