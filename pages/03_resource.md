@@ -8,6 +8,10 @@ class: 'text-center'
 
 ## Resource Bundle
 
+<!--
+Now let's continue with the main topic of my talk: the Resource bundle.
+-->
+
 ---
 
 ###  Past use cases
@@ -15,9 +19,15 @@ class: 'text-center'
 <v-clicks>
 
 * Making CRUD with Doctrine entities.
-* Avoiding writing controllers that all do the same thing.
+* Avoiding writing controllers that all do the same things.
 
 </v-clicks>
+
+<!--
+It was originally created: 
+* to make CRUD with Doctrine entities,
+* and to avoid writing controllers that all do the same things.
+-->
 
 ---
 
@@ -31,19 +41,34 @@ class: 'text-center'
 
 </v-clicks>
 
+<!--
+Now we want:
+* a better DX
+* we also want to customize the persistence layer such as an ERP or Elastic search for example.
+* and we want to use it in DDD projects.
+-->
+
 ---
 
 # New Sylius Resource System
 
 <v-clicks>
 
-We can thank:
-
 * API Platform for the inspiration
 * Akawaka & Commerce Weavers for sponsoring that development
 * Łukasz Chruściel at Commerce Weavers for the code reviews
 
 </v-clicks>
+
+<!--
+To fulfil these requirements, 
+I've created a new Sylius resource system.
+
+* Basically, it's based on API Platform internals, so we can thank this project and their core team members for the inspiration.
+* To make that happen, I've submitted about one hundred and twenty pull requests.
+So it was a lot of work for me, but also for reviews. So we can thank Akawaka & Commerce Weavers for sponsoring that development.
+* And Łukasz Chruściel for all the reviews.
+-->
 
 ---
 src: ./resource/00_configure_your_templates.md

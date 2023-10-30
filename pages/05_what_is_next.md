@@ -124,7 +124,9 @@ Cooperation
 layout: center
 ---
 
-Now, it's your turn to give it a try.
+<p class="text-3xl">Now, it's your turn to give it a try.</p>
+
+<br /><br />
 
 <uim-twitter class="text-3xl text-blue-400 mx-2 my--2" /> @loic_425 
 <uim-github class="text-3xl text-black-400 mx-2 my--2" /> @loic425
