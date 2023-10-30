@@ -10,10 +10,9 @@ hideInToc: true
 * Core Team Member @Sylius
 * Monofony creator
 
-<br />
-
-<uim-twitter class="text-3xl text-blue-400 mx-2 my--2" /> @loic_425 
-<uim-github class="text-3xl text-black-400 mx-2 my--2" /> @loic425
+<!--
+My name is Loïc Frémont, I'm a technical expert at Akawaka, a Sylius core team member and Monofony creator.
+-->
 
 ---
 class: w-sm

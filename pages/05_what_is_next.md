@@ -126,6 +126,9 @@ layout: center
 
 Now, it's your turn to give it a try.
 
+<uim-twitter class="text-3xl text-blue-400 mx-2 my--2" /> @loic_425 
+<uim-github class="text-3xl text-black-400 mx-2 my--2" /> @loic425
+
 <!--
 The two routing systems  are working together without any conflicts.
 -->

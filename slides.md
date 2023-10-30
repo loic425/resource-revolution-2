@@ -35,8 +35,13 @@ on the new Sylius Resource & Grid
 </div>
 
 <div align="center">
-<img class="w-75" src="https://api-platform.com/logo.png">
+<img class="w-75" src="https://api-platform.com/logo.png">s
 </div>
+
+<!--
+Let's talk about the Resource revolution on the new Sylius and Grid.
+-->
+
 ---
 src: ./pages/01_index.md
 ---
