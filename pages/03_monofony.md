@@ -24,7 +24,7 @@ $ composer create-project monofony/skeleton project_name
 ```
 
 <!--
-To set up the project, there is a skeleton which uses Flex to copy some basic features into your projects.
+To set up the project, there is a skeleton which uses Flex to copy some basic features into your project.
 -->
 
 ---
@@ -35,7 +35,7 @@ transition: fade
 
 <!--
 The installation comes with an admin pack.
-It contains a minimal dashboard and some basic CRUD pages to manage administrators and customers.
+It contains a minimal dashboard and some basic CRUDs to manage administrators and customers.
 
 All these features can be customized, improved or simply removed.
 -->

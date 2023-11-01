@@ -12,7 +12,7 @@ sylius_resource:
 A new feature that I want to introduce is the default templates directory configuration.
 
 In Sylius admin panel, there are some common templates for CRUD pages.
-* these default templates read the metadata on your operations to build the page title.
+* these default templates read the metadata from your operations to build the page title.
 * the create and update templates are using a form and submit buttons
 * the index template contains a grid
 
