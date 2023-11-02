@@ -8,8 +8,8 @@ namespace App\BoardGameBlog\Infrastructure\Sylius\Resource;
 // [...]
 use App\BoardGameBlog\Infrastructure\Sylius\State\Processor\CreateBoardGameProcessor;
 use App\BoardGameBlog\Infrastructure\Symfony\Form\Type\BoardGameType;
-use Sylius\Component\Resource\Metadata\Index;
-use Sylius\Component\Resource\Metadata\Create;
+use Sylius\Resource\Metadata\Index;
+use Sylius\Resource\Metadata\Create;
 
 #[AsResource(
     driver: false, 
@@ -36,7 +36,7 @@ final class BoardGameResource implements ResourceInterface
 namespace App\BoardGameBlog\Infrastructure\Sylius\State\Processor;
 
 // [...]
-use Sylius\Component\Resource\State\ProcessorInterface;
+use Sylius\Resource\State\ProcessorInterface;
 
 final class CreateBoardGameProcessor implements ProcessorInterface
 {

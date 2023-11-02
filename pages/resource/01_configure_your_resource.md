@@ -7,8 +7,8 @@ namespace App\Entity;
 
 use App\Repository\BookRepository;
 use Doctrine\ORM\Mapping as ORM;
-use Sylius\Component\Resource\Metadata\AsResource;
-use Sylius\Component\Resource\Model\ResourceInterface;
+use Sylius\Resource\Metadata\AsResource;
+use Sylius\Resource\Model\ResourceInterface;
 
 #[ORM\Entity(repositoryClass: BookRepository::class)]
 #[AsResource]

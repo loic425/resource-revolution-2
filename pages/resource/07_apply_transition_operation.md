@@ -7,8 +7,8 @@ We'll use `apply_state_machine_transition` operation which allows to apply a tra
 ```php {all|7|7,3}
 namespace App\Entity;
 
-use Sylius\Component\Resource\Metadata\ApplyStateMachineTransition;
-use Sylius\Component\Resource\Model\ResourceInterface;
+use Sylius\Resource\Metadata\ApplyStateMachineTransition;
+use Sylius\Resource\Model\ResourceInterface;
 
 // [...]
 #[ApplyStateMachineTransition(stateMachineTransition: 'publish')]

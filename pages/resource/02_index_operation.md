@@ -7,9 +7,9 @@ We'll use `Index` operation which allows to browse all items of your resource.
 ```php {all|8-10|8-10,3|12-14}
 namespace App\Entity;
 
-use Sylius\Component\Resource\Metadata\Index;
-use Sylius\Component\Resource\Metadata\AsResource;
-use Sylius\Component\Resource\Model\ResourceInterface;
+use Sylius\Resource\Metadata\Index;
+use Sylius\Resource\Metadata\AsResource;
+use Sylius\Resource\Model\ResourceInterface;
 
 #[AsResource(
     operations: [
@@ -67,9 +67,9 @@ routeName                "app_book_index"
 routePrefix              null                                                         
 redirectToRoute          null                                                                
 redirectArguments        null                                                                
-provider                 "Sylius\Component\Resource\Symfony\Request\State\Provider"          
-processor                "Sylius\Component\Resource\Doctrine\Common\State\PersistProcessor"  
-responder                "Sylius\Component\Resource\Symfony\Request\State\Responder"         
+provider                 "Sylius\Resource\Symfony\Request\State\Provider"          
+processor                "Sylius\Resource\Doctrine\Common\State\PersistProcessor"  
+responder                "Sylius\Resource\Symfony\Request\State\Responder"         
 repository               "app.repository.book"                                               
 template                 "@SyliusAdminUi/crud/index.html.twig"
 #[...]
@@ -127,9 +127,9 @@ To use a grid for you operation, you need to install the [Sylius grid package](h
 namespace App\Entity;
 
 use App\Grid\BookGrid;
-use Sylius\Component\Resource\Metadata\Index;
-use Sylius\Component\Resource\Metadata\AsResource;
-use Sylius\Component\Resource\Model\ResourceInterface;
+use Sylius\Resource\Metadata\Index;
+use Sylius\Resource\Metadata\AsResource;
+use Sylius\Resource\Model\ResourceInterface;
 
 #[AsResource]
 // You can use either the FQCN of your grid
@@ -158,7 +158,7 @@ Operation Metadata
 Option                   Value
  ------------------------ -------------------------------------------------------------------- 
 #[...]                                                            
-provider                 "Sylius\Component\Resource\Grid\State\RequestGridProvider"        
+provider                 "Sylius\Resource\Grid\State\RequestGridProvider"        
 #[...]
 ```
 

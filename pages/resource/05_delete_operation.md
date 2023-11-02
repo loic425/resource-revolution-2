@@ -8,9 +8,9 @@ We'll use `Delete` and `Bulk delete` operations which allows to remove existing 
 namespace App\Entity;
 
 use App\Form\BookType;
-use Sylius\Component\Resource\Metadata\BulkDelete;
-use Sylius\Component\Resource\Metadata\Create;
-use Sylius\Component\Resource\Metadata\Delete;
+use Sylius\Resource\Metadata\BulkDelete;
+use Sylius\Resource\Metadata\Create;
+use Sylius\Resource\Metadata\Delete;
 // [...]
 
 #[AsResource(

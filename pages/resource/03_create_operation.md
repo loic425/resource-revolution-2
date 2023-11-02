@@ -8,11 +8,11 @@ We'll use `Create` and `Update` operations which allows to add a new item of you
 namespace App\Entity;
 
 use App\Form\BookType;
-use Sylius\Component\Resource\Metadata\Create;
-use Sylius\Component\Resource\Metadata\Index;
-use Sylius\Component\Resource\Metadata\Update;
-use Sylius\Component\Resource\Metadata\AsResource;
-use Sylius\Component\Resource\Model\ResourceInterface;
+use Sylius\Resource\Metadata\Create;
+use Sylius\Resource\Metadata\Index;
+use Sylius\Resource\Metadata\Update;
+use Sylius\Resource\Metadata\AsResource;
+use Sylius\Resource\Model\ResourceInterface;
 
 #[AsResource(
     formType: BookType::class,

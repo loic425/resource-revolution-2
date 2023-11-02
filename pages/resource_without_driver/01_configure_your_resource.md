@@ -1,9 +1,9 @@
 ```php{all|7|7,3|8|8,4|8,4,17-20}
 namespace App\BoardGameBlog\Infrastructure\Sylius\Resource;
 
-use Sylius\Component\Resource\Metadata\AsResource;
-use Sylius\Component\Resource\Model\ResourceInterface;
-use Symfony\Component\Validator\Constraints\NotBlank;
+use Sylius\Resource\Metadata\AsResource;
+use Sylius\Resource\Model\ResourceInterface;
+use Symfony\\Validator\Constraints\NotBlank;
 
 #[AsResource(driver: false)]
 final class BoardGameResource implements ResourceInterface

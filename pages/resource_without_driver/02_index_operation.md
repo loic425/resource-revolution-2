@@ -5,10 +5,10 @@
 ```php{all|9-13|9-13,3}
 namespace App\BoardGameBlog\Infrastructure\Sylius\Resource;
 
-use Sylius\Component\Resource\Metadata\Index;
-use Sylius\Component\Resource\Metadata\AsResource;
-use Sylius\Component\Resource\Model\ResourceInterface;
-use Symfony\Component\Validator\Constraints\NotBlank;
+use Sylius\Resource\Metadata\Index;
+use Sylius\Resource\Metadata\AsResource;
+use Sylius\Resource\Model\ResourceInterface;
+use Symfony\\Validator\Constraints\NotBlank;
 
 #[AsResource(driver: false)]
 #[Index(
@@ -69,7 +69,7 @@ transition: fade
 namespace App\BoardGameBlog\Infrastructure\Sylius\Grid\DataProvider;
 
 // [...]
-use Sylius\Component\Grid\Data\DataProviderInterface;
+use Sylius\Grid\Data\DataProviderInterface;
 
 final class BoardGameGridProvider implements DataProviderInterface
 {
@@ -101,7 +101,7 @@ final class BoardGameGridProvider implements DataProviderInterface
 namespace App\BoardGameBlog\Infrastructure\Sylius\Grid\DataProvider;
 
 // [...]
-use Sylius\Component\Grid\Data\DataProviderInterface;
+use Sylius\Grid\Data\DataProviderInterface;
 
 final class BoardGameGridProvider implements DataProviderInterface
 {

@@ -8,7 +8,7 @@ We'll use `Bulk Update` operation which allows to update several items of your r
 namespace App\Entity;
 
 use App\State\Processor\PublishBookProcessor;
-use Sylius\Component\Resource\Metadata\BulkUpdate;
+use Sylius\Resource\Metadata\BulkUpdate;
 
 // [...]
 #[BulkUpdate(

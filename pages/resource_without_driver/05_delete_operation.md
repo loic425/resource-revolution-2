@@ -8,7 +8,7 @@ namespace App\BoardGameBlog\Infrastructure\Sylius\Resource;
 // [...]
 use App\BoardGameBlog\Infrastructure\Sylius\State\Processor\DeleteBoardGameProcessor;
 use App\BoardGameBlog\Infrastructure\Sylius\State\Provider\BoardGameItemProvider;
-use Sylius\Component\Resource\Metadata\Delete;
+use Sylius\Resource\Metadata\Delete;
 
 // [...]
 #[Delete(
@@ -28,7 +28,7 @@ final class BoardGameResource implements ResourceInterface
 
 ```php {all|4|4,2|6|8|10|10,15-26|17-18|19-26}
 // [...]
-use Sylius\Component\Resource\State\ProcessorInterface;
+use Sylius\Resource\State\ProcessorInterface;
 
 final class DeleteBoardGameProcessor implements ProcessorInterface
 {

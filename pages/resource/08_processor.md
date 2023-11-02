@@ -8,8 +8,8 @@ We configure an `update` operation.
 namespace App\Entity;
 
 use App\State\Processor\PublishBookProcessor;
-use Sylius\Component\Resource\Metadata\Update;
-use Sylius\Component\Resource\Model\ResourceInterface;
+use Sylius\Resource\Metadata\Update;
+use Sylius\Resource\Model\ResourceInterface;
 
 // [...]
 #[Update(
@@ -47,11 +47,11 @@ It will configure this route for your `publish` operation.
 ```php{all|9|9,6|12|12,7|13|13,4|17|19|20|23}
 // src/State/Processor/PublishBookProcessor.php
 
-use Sylius\Component\Resource\Context\Context;
-use Sylius\Component\Resource\Doctrine\Common\State\PersistProcessor;
-use Sylius\Component\Resource\Metadata\Operation;
-use Sylius\Component\Resource\State\ProcessorInterface;
-use Symfony\Component\Workflow\WorkflowInterface;
+use Sylius\Resource\Context\Context;
+use Sylius\Resource\Doctrine\Common\State\PersistProcessor;
+use Sylius\Resource\Metadata\Operation;
+use Sylius\Resource\State\ProcessorInterface;
+use Symfony\\Workflow\WorkflowInterface;
 
 final class PublishBookProcessor implements ProcessorInterface
 {

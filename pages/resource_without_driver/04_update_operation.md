@@ -8,7 +8,7 @@ namespace App\BoardGameBlog\Infrastructure\Sylius\Resource;
 // [...]
 use App\BoardGameBlog\Infrastructure\Sylius\State\Processor\UpdateBoardGameProcessor;
 use App\BoardGameBlog\Infrastructure\Sylius\State\Provider\BoardGameItemProvider;
-use Sylius\Component\Resource\Metadata\Update;
+use Sylius\Resource\Metadata\Update;
 
 // [...]
 #[Update(
@@ -28,7 +28,7 @@ final class BoardGameResource implements ResourceInterface
 
 ```php {all|4|4,2|8|10-11|13-14|16|18-20|22-26}
 // [...]
-use Sylius\Component\Resource\State\ProviderInterface;
+use Sylius\Resource\State\ProviderInterface;
 
 final class BoardGameItemProvider implements ProviderInterface
 {
@@ -62,7 +62,7 @@ final class BoardGameItemProvider implements ProviderInterface
 
 ```php {all|4|4,2|6|8|10|10,15-26|17-18|20-21|23-27}
 // [...]
-use Sylius\Component\Resource\State\ProcessorInterface;
+use Sylius\Resource\State\ProcessorInterface;
 
 final class UpdateBoardGameProcessor implements ProcessorInterface
 {

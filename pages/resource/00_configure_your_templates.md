@@ -16,4 +16,7 @@ In Sylius admin panel, there are some common templates for CRUD pages.
 * the create and update templates are using a form and submit buttons
 * the index template contains a grid
 
+That will simplify a lot the operations' configuration.
+Cause you will be able to skip that definition in each resource metadata.
+
 -->
